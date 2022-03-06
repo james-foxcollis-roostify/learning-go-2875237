@@ -22,6 +22,8 @@ func main() {
 		result = MultiplyValues(float1, float2)
 	case "/":
 		result = DivideValues(float1, float2)
+	default:
+		panic("Invalid Operation")
 	}
 
 	fmt.Printf("The result is %v\n\n", result)
